@@ -1,0 +1,48 @@
+ERROR:root:run, Definition not found
+ERROR:root:gregarious, Definition not found
+ERROR:root:obfuscate, Definition not found
+ERROR:root:benevolent, Definition not found
+INFO:root:run, process work well
+INFO:root:gregarious, process work well
+INFO:root:obfuscate, process work well
+INFO:root:benevolent, process work well
+INFO:root:run, process work well
+INFO:root:gregarious, process work well
+INFO:root:obfuscate, process work well
+INFO:root:benevolent, process work well
+2025-06-22 14:56:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dictionary.cambridge.org:443
+2025-06-22 14:56:26 - urllib3.connectionpool - DEBUG - https://dictionary.cambridge.org:443 "GET /dictionary/english/run HTTP/11" 200 None
+2025-06-22 14:56:29 - root - INFO - run, process work well
+2025-06-22 14:56:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dictionary.cambridge.org:443
+2025-06-22 14:56:29 - urllib3.connectionpool - DEBUG - https://dictionary.cambridge.org:443 "GET /dictionary/english/gregarious HTTP/11" 200 None
+2025-06-22 14:56:32 - root - INFO - gregarious, process work well
+2025-06-22 14:56:32 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dictionary.cambridge.org:443
+2025-06-22 14:56:33 - urllib3.connectionpool - DEBUG - https://dictionary.cambridge.org:443 "GET /dictionary/english/obfuscate HTTP/11" 200 None
+2025-06-22 14:56:36 - root - INFO - obfuscate, process work well
+2025-06-22 14:56:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dictionary.cambridge.org:443
+2025-06-22 14:56:36 - urllib3.connectionpool - DEBUG - https://dictionary.cambridge.org:443 "GET /dictionary/english/benevolent HTTP/11" 200 None
+2025-06-22 14:56:39 - root - INFO - benevolent, process work well
+2025-06-22 14:58:04 - root - INFO - run, process work well
+2025-06-22 14:58:07 - root - INFO - gregarious, process work well
+2025-06-22 14:58:11 - root - INFO - obfuscate, process work well
+2025-06-22 14:58:14 - root - INFO - benevolent, process work well
+2025-06-22 15:01:04 - root - INFO - run, process work well
+2025-06-22 15:01:07 - root - INFO - gregarious, process work well
+2025-06-22 15:01:11 - root - INFO - obfuscate, process work well
+2025-06-22 15:01:14 - root - INFO - benevolent, process work well
+2025-06-22 15:01:59 - root - INFO - run, process work well
+2025-06-22 15:02:02 - root - INFO - gregarious, process work well
+2025-06-22 15:02:05 - root - INFO - obfuscate, process work well
+2025-06-22 15:02:09 - root - INFO - benevolent, process work well
+2025-06-22 15:05:45 - root - INFO - run, process work well
+2025-06-22 15:05:49 - root - INFO - gregarious, process work well
+2025-06-22 15:05:52 - root - INFO - obfuscate, process work well
+2025-06-22 15:05:55 - root - INFO - benevolent, process work well
+2025-06-22 15:06:46 - root - INFO - run, process work well
+2025-06-22 15:06:50 - root - INFO - gregarious, process work well
+2025-06-22 15:06:53 - root - INFO - obfuscate, process work well
+2025-06-22 15:06:56 - root - INFO - benevolent, process work well
+2025-06-22 15:08:46 - root - INFO - run, process work well
+2025-06-22 15:08:49 - root - INFO - gregarious, process work well
+2025-06-22 15:08:52 - root - INFO - obfuscate, process work well
+2025-06-22 15:08:56 - root - INFO - benevolent, process work well

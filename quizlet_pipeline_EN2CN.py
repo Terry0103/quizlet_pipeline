@@ -5,18 +5,7 @@ import time
 import datetime
 import logging
 
-str_datetime: str = datetime.datetime.now().strftime("%Y-%m-%d")
-logging.basicConfig(
-    filename = f'./log/{str_datetime}_vocab',
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S")
 
-
-
-FINE_NAME: str = f"./vocab_csv/{str_datetime}_quizlet_vocabs.csv"
-MAX_DEFS: int = 2
-MAX_EXPS: int = 1
 
 
 def get_cambridge_entry(word):
@@ -92,13 +81,30 @@ def format_entry(word):
 
     return "\n".join(lines)
 
-# Your word list
-words = ["run", "obfuscate", "benevolent", "gregarious"]
+if __name__ == "__main__":
+    VOCAB_TXT: str = "temp.txt"
+    STR_DATETIME: str = datetime.datetime.now().strftime("%Y-%m-%d")
+    FINE_NAME: str = f"./vocab_csv/{STR_DATETIME}_{VOCAB_TXT}.csv"
+    MAX_DEFS: int = 2
+    MAX_EXPS: int = 1
 
-# Save output
-with open(FINE_NAME, "w", encoding="utf-8") as f:
-    for word in words:
-        entry_text = format_entry(word)
-        f.write(entry_text + "\n\n")  # double newline between words
-        time.sleep(1)  # be respectful when scraping
+
+    logging.basicConfig(
+    filename = f'./log/{STR_DATETIME}_vocab',
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S")
+
+    # Your word list
+    words: list[str] = []
+    with open(f"./vocabulary_list/{VOCAB_TXT}", "r") as f:
+        for w in f:
+            words.append(w.strip())
+
+    # Save output
+    with open(FINE_NAME, "a", encoding="utf-8") as f:
+        for word in words:
+            entry_text = format_entry(word)
+            f.write(entry_text + "\n\n")  # double newline between words
+            time.sleep(1)  # be respectful when scraping
 
